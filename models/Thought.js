@@ -8,7 +8,10 @@ const ThoughtSchema = new Schema(
             required: [true, 'You must provide text for a thought!'],
             maxlength: 280
         },
-        
+        createdAt: {
+            type: Date,
+            default: Date.now,
+        }
     }
 )
 const ReactionSchema = new Schema(
