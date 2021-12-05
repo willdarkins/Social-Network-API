@@ -36,7 +36,12 @@ ThoughtSchema.virtual('reactionCount').get(function () {
 
 
 const ReactionSchema = new Schema(
-
+    {
+        reactionId: {
+            type: Schema.Types.ObjectId,
+            default: () => new Types.ObjectId()
+        }
+    }
 )
 
 const Thought = model('Thought', ThoughtSchema);
