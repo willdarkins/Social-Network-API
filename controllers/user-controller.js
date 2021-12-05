@@ -1,4 +1,3 @@
-const { Error } = require('mongoose');
 const { User } = require('../models');
 
 const userController = {
