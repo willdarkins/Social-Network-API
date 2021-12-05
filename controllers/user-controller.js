@@ -1,3 +1,4 @@
+const { Error } = require('mongoose');
 const { User } = require('../models');
 
 const userController = {
@@ -31,6 +32,19 @@ const userController = {
             res.status(400).json(err)
         })
     },
-    
+    updateUserById({ params, body }, res) {
+        User.findOneAndUpdate({ _id: params.id }, body, {new: true, runValidators: true})
+        .then(dbUser => {
+            if(!dbUser){
+                res.status(400).json({message: 'There is no user with that ID to update'});
+                return
+            }
+            res.json(dbUser);
+        })
+        .catch(err=> {
+            console.log(err);
+            res.status(400).json(err)
+        })
+    }
 }   
 module.exports = userController;
