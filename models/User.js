@@ -14,14 +14,20 @@ const UserSchema = new Schema(
             unique: true,
             match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/]
         },
-        thoughts: {
-            
-        },
+        thoughts: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Thought'
+            }
+        ],
         friends: [
-            
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'User'
+            }
         ]
     })
 
-    const User = model('User', UserSchema); 
+const User = model('User', UserSchema);
 
-    module.exports = User;
+module.exports = User;
