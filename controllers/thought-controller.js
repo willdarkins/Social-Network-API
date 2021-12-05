@@ -26,6 +26,20 @@ const thoughtController = {
             res.json(dbThoughts)
         })
         .catch(err => res.json(err))
+    },
+    getThoughtById({ params }, res){
+        Thought.findOne({ _id: params.thoughtId })
+        .then( dbThought => {
+            if(!dbThought){
+                res.status(400).json({ message: 'There is no user ID associated with that thought'})
+                return
+            }
+            res.json(dbThought)
+        })
+        .catch( err => {
+            console.log(err)
+            res.status(400).json(err)
+        })
     }
 }
 
