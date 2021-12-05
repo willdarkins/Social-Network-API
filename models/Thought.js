@@ -40,6 +40,11 @@ const ReactionSchema = new Schema(
         reactionId: {
             type: Schema.Types.ObjectId,
             default: () => new Types.ObjectId()
+        },
+        reactionBody: {
+            type: String,
+            required: [true, 'You must provide text for the reaction'],
+            maxlength: 280
         }
     }
 )
