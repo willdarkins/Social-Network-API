@@ -79,6 +79,24 @@ const thoughtController = {
             console.log(err);
             res.status(400).json(err);
         })
+    },
+    addReaction({ params, body}, res) {
+        Thought.findOneAndUpdate(
+            { _id: params.thoughtId},
+            { $push: {reactions: body}},
+            { new: true }
+        )
+        .then(dbReaction => {
+            if(!dbReaction) {
+                res.status(400).json({ message: 'There is no thought associated with that ID'})
+                return
+            }
+            res.json(dbReaction)
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(400).json(err)
+        })
     }
 }
 
