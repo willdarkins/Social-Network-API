@@ -1,5 +1,6 @@
 //imported schema constructor and model function
 const { Schema, model } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
 
 const ThoughtSchema = new Schema(
     {
@@ -50,8 +51,17 @@ const ReactionSchema = new Schema(
             type: String,
             required: [true, 'You mus provide a username.']
         },
-        
-    }
+        createdAt: {
+            type: Date,
+            default: Date.now,
+            get: createdAtVal => dateFormat(createdAtVal)
+        }
+    },
+    {
+        toJSON: {
+          getters: true
+        }
+      }
 )
 
 const Thought = model('Thought', ThoughtSchema);
