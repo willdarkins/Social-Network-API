@@ -54,6 +54,31 @@ const thoughtController = {
                 console.log(err);
                 res.status(400).json(err);
             })
+    },
+    removeThoughtById({ params }, res) {
+        Thought.findOneAndDelete({_id: params.thoughtId},)
+        .then(deletedThought => {
+            if(!deletedThought) {
+                res.status(400).json({ message: 'There is no thought with that ID to delete'})
+                return
+            }
+            return User.findOneAndUpdate(
+                { _id: params.userId },
+                { $pull: { thoughts: params.thoughtId }},
+                { new: true }
+            )
+        })
+        .then(deletedThought => {
+            if(!deletedThought) {
+                res.status(400).json({ message: 'There is no user associated with this ID'});
+                return
+            }
+            res.json(deletedThought)
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(400).json(err);
+        })
     }
 }
 
