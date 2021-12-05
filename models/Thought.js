@@ -7,11 +7,13 @@ const ThoughtSchema = new Schema(
         thoughtText: {
             type: String,
             required: [true, 'You must provide text for a thought!'],
+            minlength: 1,
             maxlength: 280
         },
         createdAt: {
             type: Date,
             default: Date.now,
+            get: createdAtVal => dateFormat(createdAtVal)
         },
         username: {
             type: String,
@@ -26,7 +28,8 @@ const ThoughtSchema = new Schema(
     },
     {
         toJSON: {
-            virtuals: true
+            virtuals: true,
+            getters: true
         }
     }
 )
@@ -34,7 +37,6 @@ const ThoughtSchema = new Schema(
 ThoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length
 })
-
 
 const ReactionSchema = new Schema(
     {
