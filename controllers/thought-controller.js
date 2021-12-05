@@ -97,6 +97,17 @@ const thoughtController = {
             console.log(err);
             res.status(400).json(err)
         })
+    },
+    deleteReaction({ params }, res) {
+        Thought.findOneAndUpdate(
+            { _id: params.thoughtId },
+            { $pull: {reactions:{ reactionId: params.reactionId }}},
+            { new: true}
+        )
+        .then(dbReaction => {
+            res.json(dbReaction);
+        })
+        .catch(err => res.json(err))
     }
 }
 
