@@ -19,6 +19,13 @@ const thoughtController = {
             res.json(dbThought)
         })
         .catch(err => res.json(err))
+    },
+    getAllThoughts(req, res) {
+        Thought.find({})
+        .then(dbThoughts => {
+            res.json(dbThoughts)
+        })
+        .catch(err => res.json(err))
     }
 }
 
