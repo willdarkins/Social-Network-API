@@ -1,5 +1,4 @@
 const { User } = require('../models');
-const { Thought } = require('../models');
 
 const userController = {
     addUser({body}, res) {
@@ -7,9 +6,7 @@ const userController = {
         .then(dbUser => {
             res.json(dbUser);
         })
-        .catch(err => {
-            res.json(err)
-        })
+        .catch(err => res.status(400).json(err));
     }
 }
 

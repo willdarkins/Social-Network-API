@@ -18,4 +18,4 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/social-ap
 // Use this to log mongo queries being executed!
 mongoose.set('debug', true);
 
-app.listen(PORT, () => console.log(`😁👍 Connected to ${PORT}, BRUH!!!`));
+app.listen(PORT, () => console.log(`😁👍 Connected to localhost ${PORT}, BRUH!!!`));
