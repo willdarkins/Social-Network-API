@@ -4,7 +4,7 @@ const {
 } = require('../../controllers/user-controller')
 
 router
-.route('/users')
+.route('/')
 .post(addUser)
 
 module.exports = router
