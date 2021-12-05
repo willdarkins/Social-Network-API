@@ -45,7 +45,12 @@ const ReactionSchema = new Schema(
             type: String,
             required: [true, 'You must provide text for the reaction'],
             maxlength: 280
-        }
+        },
+        username: {
+            type: String,
+            required: [true, 'You mus provide a username.']
+        },
+        
     }
 )
 
