@@ -15,7 +15,7 @@ const ReactionSchema = new Schema(
         },
         username: {
             type: String,
-            required: [true, 'You mus provide a username.']
+            required: [true, 'You must provide a username.']
         },
         createdAt: {
             type: Date,
