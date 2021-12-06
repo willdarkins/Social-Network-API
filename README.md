@@ -1,6 +1,6 @@
 # 💻 Social-Network-API-Shell
 
-## ❓ Description
+## 💼 Description
 *The what, why, and how:*
 <br>
 A versitile social media focused API utilizing the NoSQL database MongoDB to manage large amounts of unstructured data on a daily basis.
@@ -28,9 +28,9 @@ Below are screenshots that provide further reference:
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
 
-## Installation
-🔌 *Steps required to install project and how to get the development environment running:* <br>
- This application is back-end exclusive and does not include view files.<br>
+## 🔌 Installation
+*Steps required to install project and how to get the development environment running:* <br>
+This application is back-end exclusive and does not include view files.<br>
 In order to implement features, you'll need access to a code editor. Then complete the following...
 
 - Copy the SSH key and clone the repsitory on your local device
@@ -43,8 +43,8 @@ In order to implement features, you'll need access to a code editor. Then comple
   - **`npm start`**
 - Now head over to <a href=https://insomnia.rest>Insomnia CORE</a> and begin testing routes
 
-## Testing
-🧪 *The following are API endpoints and their associated routes to be tested using Insomnia CORE* <br>
+## 🧪 Testing
+*The following are API endpoints and their associated routes to be tested using Insomnia CORE* <br>
 
 **`/api/users`**
   - `GET` all users
@@ -89,8 +89,8 @@ In order to implement features, you'll need access to a code editor. Then comple
   - `POST` to create a reaction stored in a single thought's `reactions` array field
   - `DELETE` to pull and remove a reaction by the reaction's `reactionId` value
 
-## Credits
-💳 *A thank you to those who helped make this happen:*
+## 💳 Credits
+*A thank you to those who helped make this happen:*
 <br>
 Big shout out to <a href = https://github.com/Ileriayo>Ileriayo Adebiyi</a> and his <a href =https://github.com/Ileriayo/markdown-badges>markdown badges repository</a> which made this project all the more beautiful. Thank You.
 
@@ -99,11 +99,11 @@ Big shout out to <a href = https://github.com/Ileriayo>Ileriayo Adebiyi</a> and 
 ![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)<br>
 <a href= https://opensource.org/licenses/MIT)>MIT License Link</a><br>
 
-## Contributing
-👐 This project adheres to standards set by the <a href = https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md>Contributor Covenant</a>.<br>
+## 👐 Contributing
+This project adheres to standards set by the <a href = https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md>Contributor Covenant</a>.<br>
 Please consult this documentation before contributing to this project.
 
-## Questions
+## ❓ Questions
 ![Profile Pic](https://user-images.githubusercontent.com/84754257/144813144-5e6fbfb0-6c99-462f-b604-a14130e3da2c.jpg)
 <br>
 If you have any questions regarding the development process of this application, or specific questions about contributing, feel free to reach me by email or on Github.
