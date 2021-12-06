@@ -76,6 +76,24 @@ const userController = {
             console.log(err);
             res.status(404).json(err);
         })
+    },
+    deleteFriend({ params }, res) {
+        User.findOneAndUpdate(
+            { _id: params.userId },
+            { $pull: { friends: params.friendId}},
+            { new: true }
+        )
+        .then(dbFriend => {
+            if(!dbFriend) {
+            res.status(404).json({ message: 'There is no user with that ID to associate with a friend'})
+            return
+        }
+        res.json(dbFriend)
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(404).json(err);
+        }) 
     }
 }
 module.exports = userController;
