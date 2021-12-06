@@ -1,24 +1,29 @@
 # 💻 Social-Network-API-Shell
 
-## Description
-❓ *The what, why, and how:*
+## 💼 Description
+*The what, why, and how:*
 <br>
 A versitile social media focused API utilizing the NoSQL database MongoDB to manage large amounts of unstructured data on a daily basis.
 
-Please follow <a href= https://vimeo.com/641425109 target="__blank">THIS LINK</a> to view a working video tutorial of the application.
+Please follow **<a href= https://vimeo.com/641425109 target="__blank">THIS LINK</a>** to view a working video tutorial of the application.
 
 Below are screenshots that provide further reference:
+<br>
+
+![Screenshot_1](https://user-images.githubusercontent.com/84754257/144814988-7eecb309-a36b-4a33-bf72-4b946984c8e3.png)
+![Screenshot_2](https://user-images.githubusercontent.com/84754257/144815015-425268de-cdf9-4789-83dc-65f65794de5c.png)
+![Screenshot_3](https://user-images.githubusercontent.com/84754257/144815043-ba0f4e70-e59e-4a34-bedc-808a2781c1af.png)
 
 ## Table of Contents
 
-* [Language/Frameworks/Platforms/Libraries](#language/frameworks/platforms/libraries)
+* [Badges](#badges)
 * [Installation](#installation)
 * [Testing](#testing)
 * [Credits](#credits)
 * [License](#license)
 * [Questions](#Questions)
 
-## Language/Frameworks/Platforms/Libraries
+## 📛 Badges
 *The following programming languages, frameworks, platforms and libraries were utilized when completing this project:*
 <br>
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -28,9 +33,9 @@ Below are screenshots that provide further reference:
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
 
-## Installation
-🔌 *Steps required to install project and how to get the development environment running:* <br>
- This application is back-end exclusive and does not include view files.<br>
+## 🔌 Installation
+*Steps required to install project and how to get the development environment running:* <br>
+This application is back-end exclusive and does not include view files.<br>
 In order to implement features, you'll need access to a code editor. Then complete the following...
 
 - Copy the SSH key and clone the repsitory on your local device
@@ -43,8 +48,8 @@ In order to implement features, you'll need access to a code editor. Then comple
   - **`npm start`**
 - Now head over to <a href=https://insomnia.rest>Insomnia CORE</a> and begin testing routes
 
-## Testing
-🧪 *The following are API endpoints and their associated routes to be tested using Insomnia CORE* <br>
+## 🧪 Testing
+*The following are API endpoints and their associated routes to be tested using Insomnia CORE:* <br>
 
 **`/api/users`**
   - `GET` all users
@@ -60,9 +65,13 @@ In order to implement features, you'll need access to a code editor. Then comple
   - `PUT` to update a user by its `_id`
   - `DELETE` to remove user by its `_id`
 
+<br>
+
 **`/api/users/:userId/friends/:friendId`**
   - `POST` to add a new friend to a user's friend list
   - `DELETE` to remove a friend from a user's friend list
+
+<br>
 
 **`/api/thoughts`**
   - `GET` to get all thoughts
@@ -79,25 +88,29 @@ In order to implement features, you'll need access to a code editor. Then comple
   - `PUT` to update a thought by its _id
   - `DELETE` to remove a thought by its _id
 
+<br>
+
 **`/api/thoughts/:thoughtId/reactions`**
   - `POST` to create a reaction stored in a single thought's `reactions` array field
   - `DELETE` to pull and remove a reaction by the reaction's `reactionId` value
 
-## Credits
-💳 *A thank you to those who helped make this happen:*
+## 💳 Credits
+*A thank you to those who helped make this happen:*
 <br>
 Big shout out to <a href = https://github.com/Ileriayo>Ileriayo Adebiyi</a> and his <a href =https://github.com/Ileriayo/markdown-badges>markdown badges repository</a> which made this project all the more beautiful. Thank You.
 
-## License
+## 🎫 License
 *This project is licensed under:* <br>
 ![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)<br>
 <a href= https://opensource.org/licenses/MIT)>MIT License Link</a><br>
 
-## Contributing
-👐 This project adheres to standards set by the <a href = https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md>Contributor Covenant</a>.<br>
+## 👐 Contributing
+This project adheres to standards set by the <a href = https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md>Contributor Covenant</a>.<br>
 Please consult this documentation before contributing to this project.
 
-## Questions
+## ❓ Questions
+![Profile Pic](https://user-images.githubusercontent.com/84754257/144813144-5e6fbfb0-6c99-462f-b604-a14130e3da2c.jpg)
+<br>
 If you have any questions regarding the development process of this application, or specific questions about contributing, feel free to reach me by email or on Github.
 * Email 📪 willdarkins@gmail.com
 * Github 🗿 [willdarkins](https://github.com/willdarkins) 
