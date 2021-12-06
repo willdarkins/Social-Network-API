@@ -94,7 +94,7 @@ In order to implement features, you'll need access to a code editor. Then comple
 <br>
 Big shout out to <a href = https://github.com/Ileriayo>Ileriayo Adebiyi</a> and his <a href =https://github.com/Ileriayo/markdown-badges>markdown badges repository</a> which made this project all the more beautiful. Thank You.
 
-## License
+## 🪪 License
 *This project is licensed under:* <br>
 ![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)<br>
 <a href= https://opensource.org/licenses/MIT)>MIT License Link</a><br>
