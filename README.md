@@ -5,7 +5,7 @@
 <br>
 A versitile social media focused API utilizing the NoSQL database MongoDB to manage large amounts of unstructured data on a daily basis.
 
-Please follow <a href= https://vimeo.com/641425109 target="__blank">THIS LINK</a> to view a working video tutorial of the application.
+Please follow **<a href= https://vimeo.com/641425109 target="__blank">THIS LINK</a>** to view a working video tutorial of the application.
 
 Below are screenshots that provide further reference:
 
