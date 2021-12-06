@@ -11,14 +11,14 @@ Below are screenshots that provide further reference:
 
 ## Table of Contents
 
-* [Language/Frameworks/Platforms/Libraries](#language/frameworks/platforms/libraries)
+* [Badges](#badges)
 * [Installation](#installation)
 * [Testing](#testing)
 * [Credits](#credits)
 * [License](#license)
 * [Questions](#Questions)
 
-## Language/Frameworks/Platforms/Libraries
+## Badges
 *The following programming languages, frameworks, platforms and libraries were utilized when completing this project:*
 <br>
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
