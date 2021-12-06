@@ -60,9 +60,13 @@ In order to implement features, you'll need access to a code editor. Then comple
   - `PUT` to update a user by its `_id`
   - `DELETE` to remove user by its `_id`
 
+<br>
+
 **`/api/users/:userId/friends/:friendId`**
   - `POST` to add a new friend to a user's friend list
   - `DELETE` to remove a friend from a user's friend list
+
+<br>
 
 **`/api/thoughts`**
   - `GET` to get all thoughts
@@ -78,6 +82,8 @@ In order to implement features, you'll need access to a code editor. Then comple
   ```
   - `PUT` to update a thought by its _id
   - `DELETE` to remove a thought by its _id
+
+<br>
 
 **`/api/thoughts/:thoughtId/reactions`**
   - `POST` to create a reaction stored in a single thought's `reactions` array field
