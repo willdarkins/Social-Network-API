@@ -103,7 +103,7 @@ const thoughtController = {
         console.log(params)
         Thought.findOneAndUpdate(
             { _id: params.thoughtId },
-            { $pull: {reactions:{ reactionId: params.reactionId }}},
+            { $pull: {reactions:{ _id: params.reactionId }}},
             { runValidators: true,  new: true }
         )
         .then(dbReaction => {
