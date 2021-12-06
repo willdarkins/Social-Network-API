@@ -104,6 +104,8 @@ Big shout out to <a href = https://github.com/Ileriayo>Ileriayo Adebiyi</a> and 
 Please consult this documentation before contributing to this project.
 
 ## Questions
+![Profile Pic](https://user-images.githubusercontent.com/84754257/144813144-5e6fbfb0-6c99-462f-b604-a14130e3da2c.jpg)
+<br>
 If you have any questions regarding the development process of this application, or specific questions about contributing, feel free to reach me by email or on Github.
 * Email 📪 willdarkins@gmail.com
 * Github 🗿 [willdarkins](https://github.com/willdarkins) 
