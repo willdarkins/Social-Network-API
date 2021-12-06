@@ -1,5 +1,7 @@
+//imported schema constructor and model function dependencies
 const { Schema, model } = require('mongoose');
 
+//using Schema constructor imported from Mongoose to define fields with specific data types
 const UserSchema = new Schema(
     {
         username: {
@@ -41,4 +43,5 @@ UserSchema.virtual('friendCount').get(function() {
 
 const User = model('User', UserSchema);
 
+//export User Model
 module.exports = User;

@@ -1,7 +1,8 @@
-//imported schema constructor and model function
+//imported schema constructor and model function dependencies
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
+//using Schema constructor imported from Mongoose to define fields with specific data types
 const ReactionSchema = new Schema(
     {
         reactionId: {
@@ -52,18 +53,21 @@ const ThoughtSchema = new Schema(
     },
     {
         toJSON: {
-            // virtuals: true,
+            virtuals: true,
             getters: true
         },
         id: false
     }
 )
 
+//created virtual to provide count number of reactions to Thoughts
 ThoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length
 })
 
+//associate models with schemas
 const Thought = model('Thought', ThoughtSchema);
 const Reaction = model('Reaction', ReactionSchema);
 
+//export models
 module.exports = Thought, Reaction;
