@@ -18,7 +18,7 @@ Below are screenshots that provide further reference:
 * [License](#license)
 * [Questions](#Questions)
 
-## Badges
+## 📛 Badges
 *The following programming languages, frameworks, platforms and libraries were utilized when completing this project:*
 <br>
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
