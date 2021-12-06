@@ -99,12 +99,16 @@ const thoughtController = {
         })
     },
     deleteReaction({ params }, res) {
+        console.log('IM HIT!!!!!!!')
         Thought.findOneAndUpdate(
             { _id: params.thoughtId },
             { $pull: {reactions:{ reactionId: params.reactionId }}},
-            { new: true}
+            { runValidators: true,  new: true }
         )
         .then(dbReaction => {
+            if(!dbReaction) {
+            return res.status(404).json({ message: 'There is no reaction to delete'})
+            }
             res.json(dbReaction);
         })
         .catch(err => res.json(err))

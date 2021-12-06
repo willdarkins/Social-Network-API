@@ -12,7 +12,9 @@ app.use(require('./routes'));
 //middleware telling mongoose which database we want to connect with
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/social-api-shell', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false
 });
 
 // Use this to log mongo queries being executed!
