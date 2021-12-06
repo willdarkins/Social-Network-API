@@ -8,6 +8,11 @@ A versitile social media focused API utilizing the NoSQL database MongoDB to man
 Please follow **<a href= https://vimeo.com/641425109 target="__blank">THIS LINK</a>** to view a working video tutorial of the application.
 
 Below are screenshots that provide further reference:
+<br>
+
+![Screenshot_1](https://user-images.githubusercontent.com/84754257/144814988-7eecb309-a36b-4a33-bf72-4b946984c8e3.png)
+![Screenshot_2](https://user-images.githubusercontent.com/84754257/144815015-425268de-cdf9-4789-83dc-65f65794de5c.png)
+![Screenshot_3](https://user-images.githubusercontent.com/84754257/144815043-ba0f4e70-e59e-4a34-bedc-808a2781c1af.png)
 
 ## Table of Contents
 
