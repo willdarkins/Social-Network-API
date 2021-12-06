@@ -14,6 +14,8 @@ const userController = {
     //GET all users 
     getAllUsers(req, res) {
         User.find({})
+            .select('-__v')
+            .sort({ _id: -1 })
             .then(dbUser => {
                 res.json(dbUser);
             })
