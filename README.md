@@ -44,7 +44,7 @@ In order to implement features, you'll need access to a code editor. Then comple
 - Now head over to <a href=https://insomnia.rest>Insomnia CORE</a> and begin testing routes
 
 ## 🧪 Testing
-*The following are API endpoints and their associated routes to be tested using Insomnia CORE* <br>
+*The following are API endpoints and their associated routes to be tested using Insomnia CORE:* <br>
 
 **`/api/users`**
   - `GET` all users
