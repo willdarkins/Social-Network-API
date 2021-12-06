@@ -1,7 +1,7 @@
 # 💻 Social-Network-API-Shell
 
-## Description
-❓ *The what, why, and how:*
+## ❓ Description
+*The what, why, and how:*
 <br>
 A versitile social media focused API utilizing the NoSQL database MongoDB to manage large amounts of unstructured data on a daily basis.
 
