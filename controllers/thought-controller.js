@@ -99,8 +99,6 @@ const thoughtController = {
         })
     },
     deleteReaction({ params }, res) {
-        console.log('IM HIT!!!!!!!')
-        console.log(params)
         Thought.findOneAndUpdate(
             { _id: params.thoughtId },
             { $pull: {reactions:{ _id: params.reactionId }}},
