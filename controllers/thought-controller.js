@@ -63,7 +63,7 @@ const thoughtController = {
     },
     //DELETE to remove a thought by its _id
     removeThoughtById({ params }, res) {
-        Thought.findOneAndDelete({ _id: params.id },)
+        Thought.findOneAndDelete({ _id: params.thoughtId },)
             .then(deletedThought => {
                 if (!deletedThought) {
                     res.status(400).json({ message: 'There is no thought with that ID to delete' })
@@ -75,12 +75,12 @@ const thoughtController = {
                     { new: true }
                 )
             })
-            .then(deletedThought => {
-                if (!deletedThought) {
-                    res.status(400).json({ message: 'There is no user associated with this ID' });
+            .then(dbthought => {
+                if (!dbthought) {
+                    res.status(400).json({ message: 'This thought has now been deleted!' });
                     return
                 }
-                res.json(deletedThought)
+                res.json(dbthought)
             })
             .catch(err => {
                 console.log(err);

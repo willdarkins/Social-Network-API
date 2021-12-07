@@ -1,5 +1,5 @@
 //imported schema constructor and model function dependencies
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose')
 const dateFormat = require('../utils/dateFormat');
 
 //using Schema constructor imported from Mongoose to define fields with specific data types
